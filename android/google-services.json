@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "17965244004",
+    "firebase_url": "https://toledo-sandbox.firebaseio.com",
+    "project_id": "toledo-sandbox",
+    "storage_bucket": "toledo-sandbox.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17965244004:android:6c45a15462a8cd70130971",
+        "android_client_info": {
+          "package_name": "app.sandbox.xp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17965244004-1dc4b1nfqccstu4q4b3igkrtq2cblh5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQw4x0xBs63FeVBEfTYpkWgj0iMcpJg6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17965244004-1dc4b1nfqccstu4q4b3igkrtq2cblh5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:17965244004:android:1d148a3e0830e59b130971",
+        "android_client_info": {
+          "package_name": "net.rafaeltoledo.xp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "17965244004-1dc4b1nfqccstu4q4b3igkrtq2cblh5n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDQw4x0xBs63FeVBEfTYpkWgj0iMcpJg6Q"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "17965244004-1dc4b1nfqccstu4q4b3igkrtq2cblh5n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

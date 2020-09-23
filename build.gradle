@@ -1,7 +1,9 @@
 buildscript {
     ext.versions = [
-            kotlin: '1.4.10',
-            ktor  : '1.4.0',
+            autodispose: '2.0.0',
+            kotlin     : '1.4.10',
+            ktor       : '1.4.0',
+            retrofit   : '2.9.0',
     ]
 
     repositories {

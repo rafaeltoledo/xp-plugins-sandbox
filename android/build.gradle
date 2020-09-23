@@ -11,6 +11,9 @@ android {
         targetSdkVersion 30
         versionCode 1
         versionName '1.0.0'
+
+        // The host address to emulator be able to access our API
+        buildConfigField 'String', 'SERVER_URL', '"http://10.0.2.2:8080"'
     }
 
     signingConfigs {
@@ -51,6 +54,19 @@ dependencies {
 
     implementation 'com.google.firebase:firebase-analytics-ktx:17.5.0'
     implementation 'com.google.firebase:firebase-config-ktx:19.2.0'
+
+    implementation "com.squareup.retrofit2:retrofit:$versions.retrofit"
+    implementation "com.squareup.retrofit2:converter-moshi:$versions.retrofit"
+    implementation "com.squareup.retrofit2:adapter-rxjava3:$versions.retrofit"
+
+    implementation "com.squareup.moshi:moshi-kotlin:1.10.0"
+
+    implementation 'io.reactivex.rxjava3:rxjava:3.0.6'
+    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+
+    implementation "com.uber.autodispose2:autodispose:$versions.autodispose"
+    implementation "com.uber.autodispose2:autodispose-androidx-lifecycle:$versions.autodispose"
+    implementation "com.uber.autodispose2:autodispose-android:$versions.autodispose"
 }
 
 apply plugin: 'com.google.gms.google-services'

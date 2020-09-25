@@ -6,6 +6,7 @@ data class News(
 )
 
 val DEFAULT_NEWS_COLLECTION = listOf(
+    News("Estudo com dados da Uber conclui que congestionamento piora até 32% quando ocorrem acidentes", "2020-09-24"),
     News("Uber lança novo portal que pode ajudar autoridades a rastrear casos de COVID-19", "2020-09-09"),
     News("Uber lança novos recursos de segurança para motoristas, entregadores e usuários durante evento", "2020-09-03"),
     News("Fatos e Dados sobre a Uber", "2020-08-27"),

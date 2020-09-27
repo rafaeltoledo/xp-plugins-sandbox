@@ -13,6 +13,7 @@ jar {
     }
 }
 
+mainClassName = 'app.sandbox.xp.MainKt'
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 

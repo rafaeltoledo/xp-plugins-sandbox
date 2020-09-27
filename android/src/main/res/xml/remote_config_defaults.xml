@@ -4,4 +4,20 @@
     <key>news_layout</key>
     <value>control</value>
   </entry>
+  <entry>
+    <key>news_empty_handler</key>
+    <value>control</value>
+  </entry>
+  <entry>
+    <key>news_successful_handler</key>
+    <value>control</value>
+  </entry>
+  <entry>
+    <key>news_generic_error_handler</key>
+    <value>treatment</value>
+  </entry>
+  <entry>
+    <key>news_unauthenticated_source_error_handler</key>
+    <value>control</value>
+  </entry>
 </defaultsMap>

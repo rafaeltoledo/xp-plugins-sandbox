@@ -9,7 +9,9 @@ import app.sandbox.xp.R
 import app.sandbox.xp.api.News
 import app.sandbox.xp.databinding.ItemNewsBinding
 
-class NewsAdapter(private val news: List<News>) : RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
+class NewsAdapter : RecyclerView.Adapter<NewsAdapter.ViewHolder>() {
+
+    private val news = mutableListOf<News>()
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ViewHolder {
         val inflater = LayoutInflater.from(parent.context)
@@ -28,6 +30,12 @@ class NewsAdapter(private val news: List<News>) : RecyclerView.Adapter<NewsAdapt
     }
 
     override fun getItemCount() = news.size
+
+    fun update(news: List<News>) {
+        this.news.clear()
+        this.news.addAll(news)
+        notifyDataSetChanged()
+    }
 
     class ViewHolder(val item: ItemNewsBinding) : RecyclerView.ViewHolder(item.root)
 }

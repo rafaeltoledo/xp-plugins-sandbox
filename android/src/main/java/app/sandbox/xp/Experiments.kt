@@ -6,7 +6,7 @@ import java.util.*
 
 object Experiments {
 
-    fun isTreated(xp: Xp):Boolean {
+    fun isTreated(xp: Xp): Boolean {
         return Firebase.remoteConfig.getString(xp.rawName()) == "treatment"
     }
 
@@ -20,7 +20,12 @@ interface Xp {
 }
 
 enum class AppExperiments : Xp {
-    NEWS_LAYOUT;
+    NEWS_LAYOUT,
+    NEWS_SUCCESSFUL_HANDLER,
+    NEWS_EMPTY_HANDLER,
+    NEWS_UNAUTHORIZED_ERROR_HANDLER,
+    NEWS_GENERIC_ERROR_HANDLER,
+    TEST_USER;
 
     override fun rawName() = name.toLowerCase(Locale.US)
 }

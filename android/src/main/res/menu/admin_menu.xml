@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/empty_variation"
+        android:title="Empty variation"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/success_variation"
+        android:title="Success variation"
+        app:showAsAction="never" />
+
+    <item
+        android:id="@+id/unauthorized_variation"
+        android:title="Unauthorized variation"
+        app:showAsAction="never" />
+</menu>

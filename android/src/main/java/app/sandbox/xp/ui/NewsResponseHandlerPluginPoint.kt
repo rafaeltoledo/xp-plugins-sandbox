@@ -9,6 +9,7 @@ import app.sandbox.xp.plugin.PluginPoint
 import app.sandbox.xp.ui.news.EmptyResultsResponseHandlerPluginFactory
 import app.sandbox.xp.ui.news.GenericResponseHandlerPluginFactory
 import app.sandbox.xp.ui.news.SuccessfulResponseHandlerPluginFactory
+import app.sandbox.xp.ui.news.UnauthorizedResponseHandlerPluginFactory
 
 interface NewsResponseHandlerPlugin {
     fun handle(binding: ActivityMainBinding)
@@ -22,6 +23,7 @@ class NewsResponseHandlerPluginPoint(
         return listOf(
             SuccessfulResponseHandlerPluginFactory(),
             EmptyResultsResponseHandlerPluginFactory(),
+            UnauthorizedResponseHandlerPluginFactory(),
             GenericResponseHandlerPluginFactory(parentComponent)
         )
     }

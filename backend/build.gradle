@@ -1,4 +1,5 @@
 apply plugin: 'org.jetbrains.kotlin.jvm'
+apply plugin: 'org.jetbrains.kotlin.kapt'
 apply plugin: 'com.github.johnrengelman.shadow'
 apply plugin: 'application'
 
@@ -24,7 +25,9 @@ dependencies {
     implementation "io.ktor:ktor-server-netty:$versions.ktor"
     implementation "io.ktor:ktor-jackson:$versions.ktor"
 
-    implementation 'org.slf4j:slf4j-simple:1.7.30'
+    kapt "org.apache.logging.log4j:log4j-core:$versions.log4j"
+    implementation "org.apache.logging.log4j:log4j-api:$versions.log4j"
+    implementation "org.apache.logging.log4j:log4j-slf4j-impl:$versions.log4j"
 }
 
 compileKotlin {

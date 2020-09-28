@@ -8,12 +8,17 @@ import io.ktor.jackson.*
 import io.ktor.routing.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
+import org.slf4j.event.Level
 
 fun Application.main() {
     install(ContentNegotiation) {
         jackson {
             propertyNamingStrategy = PropertyNamingStrategy.SNAKE_CASE
         }
+    }
+
+    install(CallLogging) {
+        level = Level.TRACE
     }
 
     routing {

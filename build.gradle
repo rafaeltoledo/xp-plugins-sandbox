@@ -3,6 +3,8 @@ buildscript {
             autodispose: '2.0.0',
             kotlin     : '1.4.10',
             ktor       : '1.4.1',
+            log4j      : '2.13.3',
+            okhttp     : '4.9.0',
             retrofit   : '2.9.0',
     ]
 

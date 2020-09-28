@@ -5,6 +5,8 @@ import com.squareup.moshi.Json
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
 import io.reactivex.rxjava3.core.Observable
+import okhttp3.OkHttpClient
+import okhttp3.logging.HttpLoggingInterceptor
 import retrofit2.Retrofit
 import retrofit2.adapter.rxjava3.RxJava3CallAdapterFactory
 import retrofit2.converter.moshi.MoshiConverterFactory
@@ -38,6 +40,13 @@ interface Api {
 object ApiClient {
 
     val client: Api = Retrofit.Builder()
+        .client(OkHttpClient.Builder()
+            .addInterceptor(HttpLoggingInterceptor()
+                .setLevel(
+                    if (BuildConfig.DEBUG) HttpLoggingInterceptor.Level.BODY
+                    else HttpLoggingInterceptor.Level.NONE
+                ))
+            .build())
         .baseUrl(BuildConfig.SERVER_URL)
         .addConverterFactory(MoshiConverterFactory.create(
             Moshi.Builder()
